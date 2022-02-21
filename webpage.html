@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .menuitem {
+                text-align:center;
+                background-color: maroon;
+                color: antiquewhite;
+                padding: 10px;
+                margin-left: 7px;
+                border-right: 1px solid #f1f1f1;
+                border-bottom:3px solid #f1f1f1;
+            }
+            .main {
+                float: right;
+                width: 80%;
+                padding: 0 20px;
+                overflow: hidden;
+            }
+            .basic_info {
+                background-color: #f1f1f1;
+                float: right;
+                width: 20%;
+                padding: 10px 15px;
+                margin-top: 7px;
+            }
+            .details{
+                width: 20%;
+                text-align:center;
+                padding: 10px;
+                margin-left:5px;
+                border-bottom:1px solid grey;
+                font-size: 11px;
+            }
+            p{
+                font-size: 13px;
+            }
+
+            @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+            .basic_info {
+                width: 100%;
+            }
+            .header{
+                width:fit-content;
+            }
+            }
+            @media only screen and (max-width:500px) {
+            /* For mobile phones:*/ 
+            .header, .main, .basic_info {
+                width: 100%;
+            }
+            }
+        </style>
+    </head>             
+    <body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+        <div class="header" style="background-color: maroon; color:antiquewhite">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <img src="apj_missile.webp" alt="apj_abdul_kalam" width="600px" height="300px">
+                    </td>
+                    <td>
+                        <h1 style="text-align: left">Dr. APJ Abdul Kalam</h1>
+                        <h3 style="text-align:inherit">The Missile man of India</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="overflow: auto;"> 
+
+            <table width="100%">
+                <!--menu that takes us to different parts of the webpage-->
+                <tr>
+                    <div>
+                        <td class="menuitem"><a href="#EarlyLife" style="color: antiquewhite;">Early life and Education</a></td>
+                        <td class="menuitem"><a href="#Career" style="color: antiquewhite;">Career as a scientist</a></td>
+                        <td class="menuitem"><a href="#Presidency" style="color: antiquewhite;">Presidency</a></td>
+                        <td class="menuitem"><a href="#PostPresidency" style="color: antiquewhite;">Post-presidency</a></td>
+                        <td class="menuitem"><a href="#PersonalLife" style="color: antiquewhite;">Personal Life</a></td>
+                        <td class="menuitem"><a href="#Writings" style="color: antiquewhite;">Writings</a></td>
+                        <td class="menuitem"><a href="#Awards" style="color: antiquewhite;">Awards and Honours</a></td>
+                    </div>
+                </tr>
+            </table>
+
+            <div class="basic_info">
+                <h3 style="text-align: center;">Basic Info</h3>
+                <img src="apj_abdul_kalam.jpg" alt="abdul_kalam" width="250px">
+                <h4 style="color:darkgoldenrod; text-align:center;">11th President of India</h4>
+                <h5 style="text-align:center">In Office</h5>
+                <p style="text-align:center; ">25 July 2002 – 25 July 2007</p>
+                <h5 style="text-align:center">Personal Details</h5>
+                <table>
+                    <tr>
+                        <td class="details">Born</td>
+                        <td class="details">Avul Pakir Jainulabdeen Abdul Kalam
+                            15 October 1931
+                            Rameswaram, Madras Presidency, British India
+                            (present-day Tamil Nadu, India)</td>
+                    </tr>
+                    <tr>
+                        <td class="details">Died</td>
+                        <td class="details">27 July 2015 (aged 83)
+                            Shillong, Meghalaya, India</td>
+                    </tr>
+                    <tr>
+                        <td class="details">Resting place</td>
+                        <td class="details">Dr. A. P. J. Abdul Kalam Desiya Ninaivagam, Pei Karumbu</td>
+                    </tr>
+                    <tr>
+                        <td class="details">Nationality</td>
+                        <td class="details">Indian</td>
+                    </tr>
+                    <tr>
+                        <td class="details">Alma mater</td>
+                        <td class="details">	
+                            St. Joseph's College, Tiruchirappalli (BEng)
+                            Madras Institute of Technology (MEng)</td>
+                    </tr>
+                    <tr>
+                        <td class="details">Profession</td>
+                        <td class="details">Aerospace Scientist, Author</td>
+                    </tr>
+                    <tr>
+                        <td class="details">Institutions</td>
+                        <td class="details">Defence Research and Development Organisation
+                            Indian Space Research Organisation</td>
+                    </tr>
+                    <tr>
+                        <td class="details">Notable work(s)</td>
+                        <td class="details">Wings of Fire, India 2020, Ignited Minds, Indomitable Spirit, Transcendence: My Spiritual Experiences with Pramukh Swamiji</td>
+                    </tr>
+                    <tr>
+                        <td class="details">Signature</td>
+                        <td class="details"><img src="apj_sign.jpg" alt="apj_sign" width="100px"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="main">
+                <div id="EarlyLife">
+                    <h2>Early life and Education</h2>
+                    <p>Avul Pakir Jainulabdeen Abdul Kalam was born on 15 October 1931 to a Tamil Muslim family in the pilgrimage centre of Rameswaram on Pamban Island, then in the Madras Presidency and now in the State of Tamil Nadu.
+                        His father Jainulabdeen was a boat owner and imam of a local mosque; his mother Ashiamma was a housewife.
+                        His father owned a ferry that took Hindu pilgrims back and forth between Rameswaram and the now uninhabited Dhanushkodi.
+                        Kalam was the youngest of four brothers and one sister in his family.
+                        His ancestors had been wealthy traders and landowners, with numerous properties and large tracts of land.
+                        Their business had involved trading groceries between the mainland and the island and to and from Sri Lanka, as well as ferrying pilgrims between the mainland and Pamban.
+                        As a result, the family acquired the title of "Mara Kalam Iyakkivar" (wooden boat steerers), which over the years became shortened to "Marakier." With the opening of the Pamban Bridge to the mainland in 1914, however, the businesses failed and the family fortune and properties were lost over time, apart from the ancestral home.
+                        By his early childhood, Kalam's family had become poor; at an early age, he sold newspapers to supplement his family's income.
+                    </p>
+                    <p>In his school years, Kalam had average grades but was described as a bright and hardworking student who had a strong desire to learn.
+                        He spent hours on his studies, especially mathematics. After completing his education at the Schwartz Higher Secondary School, Ramanathapuram, Kalam went on to attend Saint Joseph's College, Tiruchirappalli, then affiliated with the University of Madras, from where he graduated in physics in 1954.
+                        He moved to Madras in 1955 to study aerospace engineering in Madras Institute of Technology.
+                        While Kalam was working on a senior class project, the Dean was dissatisfied with his lack of progress and threatened to revoke his scholarship unless the project was finished within the next three days.
+                        Kalam met the deadline, impressing the Dean, who later said to him, "I was putting you under stress and asking you to meet a difficult deadline".
+                        He narrowly missed achieving his dream of becoming a fighter pilot, as he placed ninth in qualifiers, and only eight positions were available in the IAF.
+                    </p>
+                </div>
+
+                <div id="Career">
+                    <h2>Career as a scientist</h2>
+                    <p>
+                        After graduating from the Madras Institute of Technology in 1960, Kalam joined the Aeronautical Development Establishment of the Defence Research and Development Organisation (by Press Information Bureau, Government of India) as a scientist after becoming a member of the Defence Research & Development Service (DRDS).
+                        He started his career by designing a small hovercraft, but remained unconvinced by his choice of a job at DRDO. 
+                        Kalam was also part of the INCOSPAR committee working under Vikram Sarabhai, the renowned space scientist.
+                        In 1969, Kalam was transferred to the Indian Space Research Organisation (ISRO) where he was the project director of India's first Satellite Launch Vehicle (SLV-III) which successfully deployed the Rohini satellite in near-earth orbit in July 1980; Kalam had first started work on an expandable rocket project independently at DRDO in 1965.
+                        In 1969, Kalam received the government's approval and expanded the programme to include more engineers.
+                    </p>
+                    <p>
+                        In 1963 to 1964, he visited NASA's Langley Research Center in Hampton, Virginia; Goddard Space Flight Center in Greenbelt, Maryland; and Wallops Flight Facility.
+                        Between the 1970s and 1990s, Kalam made an effort to develop the Polar Satellite Launch Vehicle (PSLV) and SLV-III projects, both of which proved to be successful.
+                    </p>
+                    <p>
+                        Kalam was invited by Raja Ramanna to witness the country's first nuclear test Smiling Buddha as the representative of TBRL, even though he had not participated in its development.
+                        In the 1970s, Kalam also directed two projects, Project Devil and Project Valiant, which sought to develop ballistic missiles from the technology of the successful SLV programme.
+                        Despite the disapproval of the Union Cabinet, Prime Minister Indira Gandhi allotted secret funds for these aerospace projects through her discretionary powers under Kalam's directorship.
+                        Kalam played an integral role convincing the Union Cabinet to conceal the true nature of these classified aerospace projects. His research and educational leadership brought him great laurels and prestige in the 1980s, which prompted the government to initiate an advanced missile programme under his directorship.
+                        Kalam and Dr V S Arunachalam, metallurgist and scientific adviser to the Defence Minister, worked on the suggestion by the then Defence Minister, R. Venkataraman on a proposal for simultaneous development of a quiver of missiles instead of taking planned missiles one after another.
+                        R Venkatraman was instrumental in getting the cabinet approval for allocating ₹ 3.88 billion for the mission, named Integrated Guided Missile Development Programme (IGMDP) and appointed Kalam as the chief executive.
+                        Kalam played a major part in developing many missiles under the mission including Agni, an intermediate range ballistic missile and Prithvi, the tactical surface-to-surface missile, although the projects have been criticised for mismanagement and cost and time overruns.
+                    </p>
+                    <p>
+                        Kalam served as the Chief Scientific Adviser to the Prime Minister and Secretary of the Defence Research and Development Organisation from July 1992 to December 1999. 
+                        The Pokhran-II nuclear tests were conducted during this period in which he played an intensive political and technological role. 
+                        Kalam served as the Chief Project Coordinator, along with Rajagopala Chidambaram, during the testing phase. 
+                        Media coverage of Kalam during this period made him the country's best known nuclear scientist. 
+                        However, the director of the site test, K Santhanam, said that the thermonuclear bomb had been a "fizzle" and criticised Kalam for issuing an incorrect report. 
+                        Both Kalam and Chidambaram dismissed the claims.
+                    </p>
+                    <p>
+                        In 1998, along with cardiologist Soma Raju, Kalam developed a low cost coronary stent, named the "Kalam-Raju Stent". 
+                        In 2012, the duo designed a rugged tablet computer for health care in rural areas, which was named the "Kalam-Raju Tablet".
+                    </p>
+                </div>
+                <div id="Presidency">
+                    <h2>Presidency</h2>
+                    <p>
+                        Kalam served as the 11th President of India, succeeding K. R. Narayanan. He won the 2002 presidential election with an electoral vote of 922,884, surpassing the 107,366 votes won by Lakshmi Sahgal. 
+                        His term lasted from 25 July 2002 to 25 July 2007.
+                    </p>
+                    <p>
+                        On 10 June 2002, the National Democratic Alliance (NDA) which was in power at the time, expressed that they would nominate Kalam for the post of President, and both the Samajwadi Party and the Nationalist Congress Party backed his candidacy. 
+                        After the Samajwadi Party announced its support for Kalam, Narayanan chose not to seek a second term in office, leaving the field clear. 
+                        Kalam said of the announcement of his candidature:
+
+                        I am really overwhelmed. Everywhere both in Internet and in other media, I have been asked for a message. I was thinking what message I can give to the people of the country at this juncture.
+                    </p>
+                    <p>
+                        On 18 June, Kalam filed his nomination papers in the Indian Parliament, accompanied by Vajpayee and his senior Cabinet colleagues.
+
+
+                        Kalam along with Vladimir Putin and Manmohan Singh during his presidency
+                        The polling for the presidential election began on 15 July 2002 in Parliament and the state assemblies, with the media claiming that the election was a one-sided affair and Kalam's victory was a foregone conclusion; the count was held on 18 July. 
+                        Kalam became the 11th president of the Republic of India in an easy victory, and moved into the Rashtrapati Bhavan after he was sworn in on 25 July. 
+                        Kalam was the third President of India to have been honoured with a Bharat Ratna, India's highest civilian honour, before becoming the President. 
+                        Dr Sarvepalli Radhakrishnan (1954) and Dr Zakir Hussain (1963) were the earlier recipients of Bharat Ratna who later became the President of India. 
+                        He was also the first scientist and the first bachelor to occupy Rashtrapati Bhawan.
+                    </p>
+                </div>
+                <div id="PostPresidency">
+                    <h2>Post-presidency</h2>
+                    <p>
+                        After leaving office, Kalam became a visiting professor at the Indian Institute of Management Shillong, the Indian Institute of Management Ahmedabad, and the Indian Institute of Management Indore; an honorary fellow of Indian Institute of Science, Bangalore; chancellor of the Indian Institute of Space Science and Technology Thiruvananthapuram; professor of Aerospace Engineering at Anna University; and an adjunct at many other academic and research institutions across India. 
+                        He taught information technology at the International Institute of Information Technology, Hyderabad, and technology at Banaras Hindu University and Anna University.
+                    </p>
+                    <p>
+                        In May 2012, Kalam launched a programme for the youth of India called the What Can I Give Movement, with a central theme of defeating corruption.
+                    </p>
+                    <p>
+                        In 2011, Kalam was criticised by civil groups over his stand on the Koodankulam Nuclear Power Plant; he supported the establishment of the nuclear power plant and was accused of not speaking with the local people. 
+                        The protesters were hostile to his visit as they saw him as a pro-nuclear scientist and were unimpressed by the assurances he provided regarding the safety features of the plant.
+                    </p>
+                </div>
+                <div id="PersonalLife">
+                    <h2>Personal Life</h2>
+                    <p>
+                        Kalam was the youngest of five siblings, the eldest of whom was a sister, Asim Zohra (d. 1997), followed by three elder brothers: Mohammed Muthu Meera Lebbai Maraikayar (born 4 November 1916), Mustafa Kalam (d. 1999) and Kasim Mohammed (d. 1995). 
+                        He was extremely close to his elder siblings and their extended families throughout his life, and would regularly send small sums of money to his older relations, himself remaining a lifelong bachelor.
+                    </p>
+                    <p>
+                        Kalam was noted for his integrity and his simple lifestyle. 
+                        He never owned a television, and was in the habit of rising at 6:30 or 7 a.m. and sleeping by 2 a.m. 
+                        His few personal possessions included his books, his veena, some articles of clothing, a CD player and a laptop; at his death, he left no will, and his possessions went to his eldest brother, who survived him.
+                    </p>
+                </div>
+                <div id="Writings">
+                    <h2>Writings</h2>
+                    <p>
+                        Kalam describes a "transformative moment" in his life when he asked Pramukh Swami, the guru of the BAPS Swaminarayan Sampradaya, how India might realise this five-pronged vision of development.  Pramukh Swami's answer—to add a sixth area developing faith in God and spirituality to overcome the current climate of crime and corruption—became the spiritual vision for the next 15 years Kalam's life, which he describes in his final book, Transcendence: My Spiritual Experiences with Pramukh Swamiji, published just a month before his death.
+                    </p>
+                    <p>
+                        It was reported that there was considerable demand in South Korea for translated versions of books authored by him.
+                    </p>
+                    <p>
+                        Kalam took an active interest in other developments in the field of science and technology, including a research programme for developing biomedical implants. He also supported open source technology over proprietary software, predicting that the use of free software on a large scale would bring the benefits of information technology to more people.
+                    </p>
+                    <p>
+                        Kalam set a target of interacting with 100,000 students during the two years after his resignation from the post of scientific adviser in 1999. 
+                        He explained, "I feel comfortable in the company of young people, particularly high school students. Henceforth, I intend to share with them experiences, helping them to ignite their imagination and preparing them to work for a developed India for which the road map is already available." His dream is to let every student to light up the sky with victory using their latent fire in the heart.
+                    </p>
+                </div>
+                <div id="Awards">
+                    <h2>Awards and honours</h2>
+                    <p>
+                        Kalam received 7 honorary doctorates from 40 universities. 
+                        The Government of India honoured him with the Padma Bhushan in 1981 and the Padma Vibhushan in 1990 for his work with ISRO and DRDO and his role as a scientific advisor to the Government. 
+                        In 1997, Kalam received India's highest civilian honour, the Bharat Ratna, for his contribution to the scientific research and modernisation of defence technology in India. 
+                        In 2013, he was the recipient of the Von Braun Award from the National Space Society "to recognize excellence in the management and leadership of a space-related project".
+                    </p>
+                    <p>
+                        In 2012, Kalam was ranked number 2 in Outlook India's poll of the Greatest Indian.
+                    </p>
+                    <p>
+                        Following his death, Kalam received numerous tributes. The Tamil Nadu state government announced that his birthday, 15 October, would be observed across the state as "Youth Renaissance Day;" the state government further instituted the "Dr. A. P. J. Abdul Kalam Award", constituting an 8-gram gold medal, a certificate and ₹500,000 (US$7,000). The award will be awarded annually on Independence Day, beginning in 2015, to residents of the state with achievements in promoting scientific growth, the humanities or the welfare of students.
+                    </p>
+                    <p>
+                        On the anniversary of Kalam's birth in 2015 the CBSE set topics on his name in the CBSE expression series.
+                    </p>
+                    <p>
+                        Prime Minister Narendra Modi ceremonially released postage stamps commemorating Kalam at DRDO Bhawan in New Delhi on 15 October 2015, the 84th anniversary of Kalam's birth.
+
+                        Researchers at the NASA's Jet Propulsion Laboratory (JPL) had discovered a new bacterium on the filters of the International Space Station (ISS) and named it Solibacillus kalamii to honour the late president Dr. A. P. J. Abdul Kalam.
+                    </p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!--footer-->
+        <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is designed by Vardan Agarwal, B.Tech CSE 2nd year, National Institute of Technogy, Delhi </div>
+
+    </body>
+</html>
